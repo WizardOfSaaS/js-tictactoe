@@ -113,14 +113,3 @@ class Game {
 }
 
 const game = new Game()
-const testValues = [['X', 'O', ''],
-                    ['', '', ''],
-                    ['X', 'O', 'O']];
-
-[0,1,2].forEach( i => {
-    [0,1,2].forEach( j=> {
-        testValues[i][j] ? game.board.cells[i][j].fill(testValues[i][j]) : null
-    })
-})
-
-// console.log(game.board.checkWin())
